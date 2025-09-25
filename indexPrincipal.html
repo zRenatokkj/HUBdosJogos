@@ -112,6 +112,24 @@
       .footer-glass { font-size: 0.95rem !important; padding: 1.2rem 0 !important; }
       .grid { gap: 1.2rem !important; }
     }
+
+    .btn-secondary {
+  background: linear-gradient(90deg, #1e293b 0%, #374151 100%);
+  color: #fbbf24;
+  font-weight: bold;
+  box-shadow: 0 2px 8px 0 #0005;
+  transition: all .18s;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: linear-gradient(90deg, #374151 0%, #4b5563 100%);
+  color: #fff;
+  box-shadow: 0 0 0 4px #fbbf24aa, 0 8px 24px 0 #0005;
+  transform: scale(1.05) translateY(-2px);
+}
   </style>
 </head>
 <body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col">
@@ -137,7 +155,7 @@
         <h2 class="text-3xl font-bold mb-2 group-hover:text-yellow-300 transition">Falling Object</h2>
         <p class="text-gray-200 mb-6 text-center">Desvie dos objetos que caem e tente sobreviver o máximo possível!</p>
         <a href="https://thomasturbando001.github.io/caicai/" class="btn-glow py-2 px-8 rounded-xl shadow-md text-lg mt-auto">Jogar</a>
-        <a href="https://thomasturbando001.github.io/novo.falling/" class="btn-glow py-2 px-8 rounded-xl shadow-md text-lg mt-4">Bug</a>
+        <a href="https://thomasturbando001.github.io/novo.falling/" class="btn-secondary py-2 px-8 rounded-xl shadow-md text-lg mt-4">Bug</a>
       </div>
 
       <!-- Jogo 2: Jogo da Velha -->
@@ -165,6 +183,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
